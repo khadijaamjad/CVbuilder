@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".AddResume">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:background="#ffffff">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:weightSum="3">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/addico" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="2"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Add resume"
+                android:textSize="27sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins_light"
+            android:hint="Employee Name"
+            android:inputType="textPersonName"
+            android:maxLines="1" />
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins_light"
+            android:hint="Contact number"
+            android:inputType="phone"
+            android:maxLines="1" />
+        <EditText
+            android:id="@+id/etMail"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins_light"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1" />
+        <EditText
+            android:id="@+id/etUni"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins_light"
+            android:hint="Univeristy"
+            android:inputType="text"
+            android:maxLines="1" />
+        <EditText
+            android:id="@+id/etDegree"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins_light"
+            android:hint="Degree"
+            android:inputType="text"
+            android:maxLines="1" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/etAge"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="55dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins_light"
+            android:hint="Age"
+            android:inputType="number"
+            android:maxLines="1" />
+            <EditText
+                android:id="@+id/etgpa"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="55dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/poppins_light"
+                android:hint="CGPA"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
+    </LinearLayout>
+
+        <EditText
+            android:id="@+id/etPosition"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins_light"
+            android:hint="Position you apply for"
+            android:inputType="text"
+            android:maxLines="1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Any Experience?"/>
+        <RadioGroup
+            android:id="@+id/expOpt"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/rbYes"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Yes"/>
+                <RadioButton
+                    android:id="@+id/rbNo"
+                    android:text="No"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_button"
+            android:fontFamily="@font/poppins_semibold"
+            android:onClick="btnAddClicked"
+            android:textSize="15sp"
+            android:text="Add Resume"
+            android:textColor="@android:color/background_light" />
+    </LinearLayout>
+</LinearLayout>

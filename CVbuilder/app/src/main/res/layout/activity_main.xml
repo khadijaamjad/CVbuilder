@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:gravity="center"
+        android:background="#ffffff">
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            app:srcCompat="@drawable/dashicon" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="Resume Manager"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_button"
+            android:fontFamily="@font/poppins_semibold"
+            android:onClick="btnAddClick"
+            android:text="Add Resume"
+            android:textColor="@android:color/background_light"
+            android:textSize="15sp" />
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_button"
+            android:text="Remove Resume"
+            android:textColor="@android:color/background_light"
+            android:onClick="btnViewAllClick"/>
+
+        <Button
+            android:id="@+id/btnViewAll"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_button"
+            android:text="View All Resumes"
+            android:textSize="15sp"
+            android:textColor="@android:color/background_light"
+            android:onClick="btnViewAllClick"/>
+    </LinearLayout>
+</LinearLayout>
